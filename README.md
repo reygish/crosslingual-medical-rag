@@ -16,6 +16,7 @@ The evaluation uses RAGAS (Retrieval-Augmented Generation Assessment) metrics to
 ├── rm.ipynb                                    # Main research methodology notebook
 ├── medDataset_symptoms_treatment.csv           # Test dataset (symptoms & treatment Q&A)
 ├── med_rag_results.json                        # Generated RAG vs No-RAG responses
+├── violin_plot.py                              # Violin plot generator
 ├── experiments/                                # Evaluation results
 │   ├── rag_eval.csv                            # Full RAG evaluation results
 │   ├── norag_eval.csv                          # Full No-RAG evaluation results
