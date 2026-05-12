@@ -22,7 +22,9 @@ The evaluation uses RAGAS (Retrieval-Augmented Generation Assessment) metrics to
 │   ├── rag_eval_metrics.csv                    # RAG metrics only
 │   ├── norag_eval_metrics.csv                  # No-RAG metrics only
 │   ├── norag_scores_all_questions.png          # No-RAG scores for all questions
-│   ├── rag_scores_all_questions.png            # RAG scores for all questions
+│   ├── norag_scores_all_questions.png          # No-RAG scores for all questions
+│   ├── rag_scores_violin_plot.png              # RAG scores violin plot version
+│   ├── norag_scores_violin_plot.png            # No-RAG scores violin plot version
 └── Indonesian Pharmaceutical/
     ├── Disease/
     │   └── processed_data_penyakit.csv         # Indonesian disease data
