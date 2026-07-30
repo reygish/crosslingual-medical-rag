@@ -80,6 +80,7 @@ Results are saved to:
 
 ### Models
 - **RAG Model**: `gemma3:4b` (4B parameters)
+- **RAG Model 2**: `qwen3.5:4b` (4B parameters) - Accessible in the branch `qwen`.
 - **Evaluator Model**: `gemma4:31b` (31B parameters)
 - **Embedding Model**: `BAAI/bge-m3`
 - **Reranker Model**: `BAAI/bge-reranker-v2-m3`
@@ -91,6 +92,7 @@ Results are saved to:
 
 ### Device
 - Uses MPS (Metal Performance Shaders) on macOS
+- Uses CUDA on Windows with Nvidia GPU
 - Falls back to CPU if unavailable
 
 ## Dataset
@@ -121,5 +123,4 @@ Results are saved to:
 - Compare with other LLMs (Claude, GPT-4, etc.)
 - Test different retrieval strategies
 - Fine-tune reranker for medical domain
-- Expand to multilingual support
 - More datasets for retrieval
