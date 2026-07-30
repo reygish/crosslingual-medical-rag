@@ -16,16 +16,13 @@ The evaluation uses RAGAS (Retrieval-Augmented Generation Assessment) metrics to
 ├── rm.ipynb                                    # Main research methodology notebook
 ├── medDataset_symptoms_treatment.csv           # Test dataset (symptoms & treatment Q&A)
 ├── med_rag_results.json                        # Generated RAG vs No-RAG responses
-├── violin_plot.py                              # Violin plot generator
 ├── experiments/                                # Evaluation results
 │   ├── rag_eval.csv                            # Full RAG evaluation results
 │   ├── norag_eval.csv                          # Full No-RAG evaluation results
 │   ├── rag_eval_metrics.csv                    # RAG metrics only
 │   ├── norag_eval_metrics.csv                  # No-RAG metrics only
 │   ├── norag_scores_all_questions.png          # No-RAG scores for all questions
-│   ├── norag_scores_all_questions.png          # No-RAG scores for all questions
-│   ├── rag_scores_violin_plot.png              # RAG scores violin plot version
-│   ├── norag_scores_violin_plot.png            # No-RAG scores violin plot version
+│   ├── rag_scores_all_questions.png            # RAG scores for all questions
 └── Indonesian Pharmaceutical/
     ├── Disease/
     │   └── processed_data_penyakit.csv         # Indonesian disease data
@@ -83,6 +80,7 @@ Results are saved to:
 
 ### Models
 - **RAG Model**: `gemma3:4b` (4B parameters)
+- **RAG Model 2**: `qwen3.5:4b` (4B parameters) - Accessible in the branch `qwen`.
 - **Evaluator Model**: `gemma4:31b` (31B parameters)
 - **Embedding Model**: `BAAI/bge-m3`
 - **Reranker Model**: `BAAI/bge-reranker-v2-m3`
@@ -94,6 +92,7 @@ Results are saved to:
 
 ### Device
 - Uses MPS (Metal Performance Shaders) on macOS
+- Uses CUDA on Windows with Nvidia GPU
 - Falls back to CPU if unavailable
 
 ## Dataset
@@ -124,5 +123,4 @@ Results are saved to:
 - Compare with other LLMs (Claude, GPT-4, etc.)
 - Test different retrieval strategies
 - Fine-tune reranker for medical domain
-- Expand to multilingual support
 - More datasets for retrieval
